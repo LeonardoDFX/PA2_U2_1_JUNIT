@@ -7,6 +7,12 @@ import frgp.utn.edu.ar.main.MatrizAdyacencia;
 class MatrizAdyacenciaTest {
 	
 	/// Punto A: agregarElementoTest
+	@Test
+    public void agregarElementoTest() {
+        MatrizAdyacencia matriz = new MatrizAdyacencia(3); 
+        matriz.agregarElemento(1, 2); 
+        assertTrue(matriz.existeElemento(1, 2)); 
+    }
 	
 	/// Punto B: agregarElementoSimetriaTest
 	
