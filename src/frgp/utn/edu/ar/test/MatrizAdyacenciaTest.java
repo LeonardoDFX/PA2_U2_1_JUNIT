@@ -15,7 +15,17 @@ class MatrizAdyacenciaTest {
     }
 	
 	/// Punto B: agregarElementoSimetriaTest
-	
+	@Test
+	public void agregarElementoSimetriaTest() {
+		
+		/// Arrange 
+		MatrizAdyacencia matriz = new MatrizAdyacencia(4); 
+		matriz.agregarElemento(2, 3);
+		/// Act
+		boolean check = matriz.existeElemento(3, 2);
+		/// Assert
+		assertTrue(check);
+	}
 	/// Punto C: eliminarElementoTest
 	
 	/// Punto D: eliminarElementoSimetricoTest
